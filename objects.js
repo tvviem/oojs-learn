@@ -35,4 +35,20 @@ var admin = new Admin('admin-df@gmail.com', 'doublefire');
 
 var users = [user1, user2, admin];
 admin.deleteUser(user1);
+admin.login().logout();
 console.log(users);
+
+function Item(id, itemname, unit) {
+    this.id = id;
+    this.itemname = itemname;
+    this.unit = unit;
+    /* this.show = function() {
+        console.log(this.itemname, '||', this.unit);
+    } */
+}
+// Su dung prototype cho phep su dung hieu qua doi tuong
+Item.prototype.show = function() {
+    console.log(this.itemname, ' | ', this.unit);
+}
+var itemObj = new Item(1, 'Bột giặt', 'thùng');
+var itemObj2 = new Item(2, 'Nước mắm', 'lít');
