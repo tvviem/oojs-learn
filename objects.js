@@ -23,4 +23,4 @@ class User {
 var user1 = new User('tvviem@blu.edu.vn', 'Viem Trieu');
 var user2 = new User('doublefire@gmail.com', 'viem');
 
-user1.updateScore().login();
+user1.login().updateScore().updateScore().logout();
