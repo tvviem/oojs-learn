@@ -1,4 +1,4 @@
-var userOne = {
+var User = {
     email: 'trieuvinhviem@gmail.com',
     name: 'Trieu vinh viem',
     login: function() {
@@ -8,5 +8,3 @@ var userOne = {
         console.log(this.email, 'has logged out');
     }
 };
-
-console.log(userOne.name);
